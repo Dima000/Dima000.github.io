@@ -1,0 +1,23 @@
+.language-stars i {
+    font-size: 20px;
+    float: right;
+}
+
+.language-title img {
+    width: 18px;
+    height: 20px;
+    margin-right: 3px;
+}
+
+.language-group {
+    display: flex;
+    margin-bottom: 15px;
+}
+.language-title {
+    flex: 1;
+}
+.language-stars {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
