@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,400i&subset=latin-ext');
+
+html, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif
+}
+body {
+	font-family: 'Open Sans', sans-serif
+}
+
+.padding-16-top {
+	padding-top: 16px;
+}
+
+body > .w3-content {
+	max-width: 1200px;
+	width: 1200px;
+}
+
+.w3-display-container h2 {
+	font-weight: 600
+}
+
 .language-stars i {
     font-size: 20px;
     float: right;
@@ -6,7 +28,7 @@
 .language-title img {
     width: 18px;
     height: 20px;
-    margin-right: 3px;
+    margin-right: 20px;
 }
 
 .language-group {
@@ -21,3 +43,4 @@
     display: flex;
     justify-content: flex-end;
 }
+
