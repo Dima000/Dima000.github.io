@@ -1,16 +1,15 @@
 import React, {Component} from 'react';
 import './App.css';
-import '../assets/css/font-awesome.min.css';
-import '../assets/css/w3.css';
-import '../assets/css/custom.css';
 
 import {GeneralInfo} from "./general-info/GeneralInfo";
+import {SideMenu} from "./side-menu/SideMenu";
 
 class App extends Component {
   render() {
     return (
         <div className="App w3-light-grey">
-          <div className="w3-content w3-margin-top">
+          <SideMenu/>
+          <div className="w3-content">
 
             {/*<!-- The Grid -->*/}
             <div className="w3-row-padding">

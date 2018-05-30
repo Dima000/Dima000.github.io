@@ -1,0 +1,8 @@
+@mixin a-text-color($default, $onHover) {
+  a {
+    color: $default;
+    &:hover {
+      color: $onHover;
+    }
+  }
+}
