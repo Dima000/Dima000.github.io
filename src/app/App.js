@@ -4,6 +4,8 @@ import '../assets/css/font-awesome.min.css';
 import '../assets/css/w3.css';
 import '../assets/css/custom.css';
 
+import {GeneralInfo} from "./general-info/GeneralInfo";
+
 class App extends Component {
   render() {
     return (
@@ -14,76 +16,9 @@ class App extends Component {
             <div className="w3-row-padding">
               {/*<!-- Left Column -->*/}
               <div className="w3-third">
-                <div className="w3-white w3-text-grey w3-card-4 w3-margin-bottom">
-                  <div className="w3-display-container">
-                    <img className="w3-padding" src="../assets/images/me.png" style={{width: '100%'}} alt="Avatar"/>
-                    <div className="w3-container"><h2>Dumitru Moțpan</h2></div>
-                  </div>
-                  <div className="w3-container padding-19-bottom">
-                    <p><i className="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"/>Web
-                      Developer</p>
-                    <p><i className="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"/>Cluj-Napoca
-                    </p>
-                    <p><i className="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"/>dumitru.motpan@gmail.com
-                    </p>
-                    <p><i className="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"/>(+40) 751
-                      524 368</p>
 
-                    <br/>
+                <GeneralInfo/>
 
-                    <p className="w3-large w3-text-theme">
-                      <b><i className="fa fa-globe fa-fw w3-margin-right w3-text-teal"/>Languages</b>
-                    </p>
-                    <div className="language-group">
-                      <div className="language-title">
-                        <img src="../assets/images/ro.svg"/> Romanian
-                      </div>
-                      <div className="language-stars">
-                        <i className="fa fa-star fa-fw w3-margin-right w3-text-teal"/>
-                        <i className="fa fa-star fa-fw w3-margin-right w3-text-teal"/>
-                        <i className="fa fa-star fa-fw w3-margin-right w3-text-teal"/>
-                        <i className="fa fa-star fa-fw w3-margin-right w3-text-teal"/>
-                        <i className="fa fa-star fa-fw w3-margin-right w3-text-teal"/>
-                      </div>
-                    </div>
-                    <div className="language-group">
-                      <div className="language-title">
-                        <img src="../assets/images/gb.svg"/> English
-                      </div>
-                      <div className="language-stars">
-                        <i className="fa fa-star fa-fw w3-margin-right w3-text-teal"/>
-                        <i className="fa fa-star fa-fw w3-margin-right w3-text-teal"/>
-                        <i className="fa fa-star fa-fw w3-margin-right w3-text-teal"/>
-                        <i className="fa fa-star fa-fw w3-margin-right w3-text-teal"/>
-                        <i className="fa fa-star fa-fw w3-margin-right"/>
-                      </div>
-                    </div>
-                    <div className="language-group">
-                      <div className="language-title">
-                        <img src="../assets/images/ru.svg"/> Russian
-                      </div>
-                      <div className="language-stars">
-                        <i className="fa fa-star fa-fw w3-margin-right w3-text-teal"/>
-                        <i className="fa fa-star fa-fw w3-margin-right w3-text-teal"/>
-                        <i className="fa fa-star fa-fw w3-margin-right w3-text-teal"/>
-                        <i className="fa fa-star fa-fw w3-margin-right w3-text-teal"/>
-                        <i className="fa fa-star fa-fw w3-margin-right"/>
-                      </div>
-                    </div>
-                    <div className="language-group">
-                      <div className="language-title">
-                        <img src="../assets/images/es.svg"/> Spanish
-                      </div>
-                      <div className="language-stars">
-                        <i className="fa fa-star fa-fw w3-margin-right w3-text-teal"/>
-                        <i className="fa fa-star fa-fw w3-margin-right"/>
-                        <i className="fa fa-star fa-fw w3-margin-right"/>
-                        <i className="fa fa-star fa-fw w3-margin-right"/>
-                        <i className="fa fa-star fa-fw w3-margin-right"/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <div className="w3-container w3-card-4 w3-white w3-text-grey">
                   {/*// <!-- Education -->*/}
                   <br/>
