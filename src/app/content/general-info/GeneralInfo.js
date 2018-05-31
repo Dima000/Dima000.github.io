@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import './style.css';
 
-import avatar from '../../assets/images/avatar.jpg';
-import flagRo from '../../assets/images/ro.svg';
-import flagEn from '../../assets/images/gb.svg';
-import flagRu from '../../assets/images/ru.svg';
-import flagEs from '../../assets/images/es.svg';
+import avatar from '../../../assets/images/avatar.jpg';
+import flagRo from '../../../assets/images/ro.svg';
+import flagEn from '../../../assets/images/gb.svg';
+import flagRu from '../../../assets/images/ru.svg';
+import flagEs from '../../../assets/images/es.svg';
 
 export class GeneralInfo extends Component {
   render() {

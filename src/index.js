@@ -5,6 +5,7 @@ import App from './app/App';
 import './assets/css/w3.css'
 import 'font-awesome/css/font-awesome.min.css'
 import 'bootstrap/dist/css/bootstrap-reboot.css'
+import 'bootstrap/dist/css/bootstrap.css'
 
 // import {unregister} from './registerServiceWorker';
 
