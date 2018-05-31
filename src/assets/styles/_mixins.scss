@@ -6,3 +6,57 @@
     }
   }
 }
+
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+@mixin shift-effect-button($textColor, $backgroundColor) {
+  a {
+    z-index: 1;
+    position: relative;
+
+    &:hover {
+      color: $textColor;
+    }
+    &:after {
+      transition: height, opacity, visibility;
+      transition-duration: .4s;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 100%;
+      height: 1px;
+      content: '';
+      color: transparent;
+      background: $backgroundColor;
+      visibility: hidden;
+      opacity: 0;
+      z-index: -1;
+    }
+    &:hover:after {
+      opacity: 1;
+      visibility: visible;
+      height: 100%;
+    }
+  }
+
+}
