@@ -14,12 +14,13 @@ export class AboutMe extends Component {
     };
 
     return (
-        <div className="about-me-section">
-          <h2 className="title-area color-main">
-            <i className="fa fa-universal-access mr-3"/>
-            {aboutMe.title}
+        <div className="about-me-section" id="about-me">
+          <h2 className="title-area color-main mr-4">
+            <span className="mr-3">{aboutMe.title}</span>
+            <i className="fa fa-universal-access"/>
           </h2>
-          <div className="w3-container">
+
+          <div className="section-content">
             <p>{aboutMe.text1}</p>
             <p>{aboutMe.text2}</p>
             <p>{aboutMe.text3}</p>

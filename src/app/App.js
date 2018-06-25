@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import './App.css';
 
-import {GeneralInfo} from "./content/general-info/GeneralInfo";
 import {SideMenu} from "./side-menu/SideMenu";
 import {AboutMe} from "./content/about-me/AboutMe";
 import {Skills} from "./content/skills/Skills";
 import {WorkExperience} from "./content/work-experience/WorkExperience";
+import {Contact} from './content/contact/Contact';
 
 class App extends Component {
   render() {
@@ -14,6 +14,7 @@ class App extends Component {
           <SideMenu/>
           <div className="content">
             {/*<GeneralInfo/>*/}
+            <Contact/>
             <AboutMe/>
             <Skills/>
             <WorkExperience/>

@@ -1,0 +1,27 @@
+@import "../../../assets/styles/variables";
+
+.contact-section {
+  .section-content {
+    padding: 20px 40px;
+  }
+
+  .icons-section i {
+    color: $themeBlue;
+    width: 10px;
+    margin-right: 18px;
+    font-size: 18px;
+  }
+
+  .icons-section a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .icons-section .item-website {
+    display: none;
+  }
+
+  .social-icons i {
+    font-size: 25px;
+  }
+}

@@ -1,5 +1,11 @@
 @import "../../../assets/styles/variables";
 
+.skills-section {
+  .section-content h4 {
+    margin-bottom: 25px;
+  }
+}
+
 .color-main {
   color: $themeBlue;
 }
