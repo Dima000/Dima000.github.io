@@ -1,0 +1,17 @@
+@import "../../../assets/styles/variables";
+
+.work-section {
+
+  .job-bullet-points {
+    list-style-type: circle;
+  }
+
+  .remark {
+    font-size: 90%;
+    color: grey;
+  }
+}
+
+.color-main {
+  color: $themeBlue;
+}
