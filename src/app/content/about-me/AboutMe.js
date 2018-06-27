@@ -36,7 +36,7 @@ export class AboutMe extends Component {
               </div>
               <div className="w3-col s6">
                 <p className="pull-right">
-                  <iframe className="w3-greyscale-max" src={aboutMe.songUrl} frameBorder="0"/>
+                  <iframe className="w3-greyscale-max" src={aboutMe.songUrl} frameBorder="0" title="youtube video"/>
                 </p>
               </div>
             </div>
