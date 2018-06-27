@@ -6,7 +6,7 @@ export class WorkExperience extends Component {
   render() {
     const {entries} = this.props;
 
-    return <div className="work-section" id="work">
+    return <section className="work-section" id="work">
       <h2 className="title-area">
         <span className="mr-3">{this.props.title}</span>
         <i className="fa fa-certificate mr-3 color-main"/>
@@ -51,7 +51,7 @@ export class WorkExperience extends Component {
             </div>
         )}
       </div>
-    </div>;
+    </section>;
   }
 }
 

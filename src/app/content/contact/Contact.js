@@ -4,7 +4,7 @@ import './contact.css';
 
 export class Contact extends Component {
   render() {
-    return <div id="contact" className="contact-section">
+    return <section id="contact" className="contact-section">
       <h2 className="title-area color-main">
         <span className="mr-4">{this.props.title}</span>
         <i className="fa fa-address-card"/>
@@ -38,7 +38,7 @@ export class Contact extends Component {
         </div>
 
       </div>
-    </div>;
+    </section>;
   }
 }
 

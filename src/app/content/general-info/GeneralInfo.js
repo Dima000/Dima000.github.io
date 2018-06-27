@@ -10,7 +10,7 @@ import flagEs from '../../../assets/images/es.svg';
 export class GeneralInfo extends Component {
   render() {
     return (
-        <div className="w3-white w3-text-grey w3-card-4 w3-margin-bottom">
+        <section className="w3-white w3-text-grey w3-card-4 w3-margin-bottom">
           <div className="w3-display-container">
             <img className="w3-padding avatar" src={avatar} alt="Avatar"/>
             <div className="w3-container"><h2>Dumitru Moțpan</h2></div>
@@ -73,7 +73,7 @@ export class GeneralInfo extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </section>
     );
   }
 }

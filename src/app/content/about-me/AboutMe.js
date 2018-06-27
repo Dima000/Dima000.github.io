@@ -14,7 +14,7 @@ export class AboutMe extends Component {
     };
 
     return (
-        <div className="about-me-section" id="about-me">
+        <section className="about-me-section" id="about-me">
           <h2 className="title-area color-main mr-4">
             <span className="mr-3">{aboutMe.title}</span>
             <i className="fa fa-universal-access"/>
@@ -41,7 +41,7 @@ export class AboutMe extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </section>
     );
   }
 }

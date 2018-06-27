@@ -7,25 +7,22 @@ import {Skills} from "./content/skills/Skills";
 import {WorkExperience} from "./content/work-experience/WorkExperience";
 import {Contact} from './content/contact/Contact';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
         <div className="App">
           <SideMenu/>
           <div className="content">
-            {/*<GeneralInfo/>*/}
             <Contact/>
             <AboutMe/>
             <Skills/>
             <WorkExperience/>
           </div>
+
         </div>
     );
   }
 }
-
-export default App;
-
 
 {/*<div className="w3-content">*/}
 

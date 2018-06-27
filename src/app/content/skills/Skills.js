@@ -4,7 +4,7 @@ import './skills.css';
 
 export class Skills extends Component {
   render() {
-    return <div className="skills-section" id="skills">
+    return <section className="skills-section" id="skills">
       <h2 className="title-area color-main">
         <span className="mr-3">{this.props.title}</span>
         <i className="fa fa-certificate mr-3"/>
@@ -33,7 +33,7 @@ export class Skills extends Component {
         </div>
 
       </div>
-    </div>;
+    </section>;
   }
 }
 
