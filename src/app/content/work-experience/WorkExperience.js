@@ -14,7 +14,7 @@ export class WorkExperience extends Component {
 
       <div className="section-content">
         {entries.map((entry, key) =>
-            <div key={key} className="job-entry">
+            <div key={key} className="job-entry mb-5">
 
               <h4 className="opacity job-title mb-2">
                 <span>{entry.position}</span>
@@ -22,7 +22,7 @@ export class WorkExperience extends Component {
                 <span className="bold">{entry.company}</span>
               </h4>
 
-              <h5 className="color-main job-period mb-3">
+              <h5 className="color-main job-period mb-4">
                 <i className="fa fa-calendar mr-3"/>
                 <span>{entry.start}</span>
                 <span> - </span>

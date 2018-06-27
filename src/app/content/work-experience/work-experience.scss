@@ -1,8 +1,12 @@
 @import "../../../assets/styles/variables";
 
 .work-section {
+  .section-content a {
+    color: #595959;
+    text-decoration: underline;
+  }
 
-  .job-bullet-points {
+  .special-skills ul {
     list-style-type: circle;
   }
 
