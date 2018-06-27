@@ -15,8 +15,8 @@ export class AboutMe extends Component {
 
     return (
         <section className="about-me-section" id="about-me">
-          <h2 className="title-area color-main mr-4">
-            <span className="mr-3">{aboutMe.title}</span>
+          <h2 className="title-area">
+            <span>{aboutMe.title}</span>
             <i className="fa fa-universal-access"/>
           </h2>
 
@@ -35,9 +35,6 @@ export class AboutMe extends Component {
                 </div>
               </div>
               <div className="w3-col s6">
-                <p className="pull-right">
-                  <iframe className="w3-greyscale-max" src={aboutMe.songUrl} frameBorder="0" title="youtube video"/>
-                </p>
               </div>
             </div>
           </div>

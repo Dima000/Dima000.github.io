@@ -8,8 +8,8 @@ export class WorkExperience extends Component {
 
     return <section className="work-section" id="work">
       <h2 className="title-area">
-        <span className="mr-3">{this.props.title}</span>
-        <i className="fa fa-certificate mr-3 color-main"/>
+        <span>{this.props.title}</span>
+        <i className="fa fa-laptop mr-3 color-main"/>
       </h2>
 
       <div className="section-content">

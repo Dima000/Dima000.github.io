@@ -1,23 +1,40 @@
 @import "../../../assets/styles/variables";
 
 .contact-section {
-  .icons-section i {
-    color: $themeBlue;
-    width: 10px;
-    margin-right: 18px;
-    font-size: 18px;
+
+  .icons-section {
+    margin-top: -0.5rem;
+
+    i {
+      color: $themeBlue;
+      width: 10px;
+      margin-right: 18px;
+      font-size: 18px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .item-website {
+      display: none;
+    }
+
+    p {
+      margin-bottom: 0;
+      padding: 0.5rem 0;
+    }
   }
 
-  .icons-section a {
-    color: inherit;
-    text-decoration: none;
+  .social-icons {
+    display: flex;
+    align-items: center;
   }
 
-  .icons-section .item-website {
-    display: none;
+  .social-icons img {
+    max-width: 30px;
+    border-radius: 10%;
   }
 
-  .social-icons i {
-    font-size: 25px;
-  }
 }

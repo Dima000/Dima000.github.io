@@ -1,12 +1,16 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+
+import codinImg from '../../../assets/images/codingame-logo.png';
+import inImg from '../../../assets/images/in-logo.png';
+import gitbuhImg from '../../../assets/images/github-logo.png';
 import './contact.css';
 
 export class Contact extends Component {
   render() {
     return <section id="contact" className="contact-section">
-      <h2 className="title-area color-main">
-        <span className="mr-4">{this.props.title}</span>
+      <h2 className="title-area">
+        <span>{this.props.title}</span>
         <i className="fa fa-address-card"/>
       </h2>
 
@@ -29,12 +33,17 @@ export class Contact extends Component {
         </div>
 
         <div className="col-md-4 icons-section social-icons">
-          <p><a href={this.props.linkedIn} rel="noopener noopener">
-            <i className="fa fa-linkedin"/>
-          </a></p>
-          <p><a href={this.props.github} rel="noreferrer noopener">
-            <i className="fa fa-github"/>
-          </a></p>
+          <a className="mr-3" href={this.props.codinGame} rel="noopener noopener">
+            <img src={codinImg} alt="codingame"/>
+          </a>
+
+          <a className="mr-3" href={this.props.github} rel="noopener noopener">
+            <img src={gitbuhImg} alt="github"/>
+          </a>
+
+          <a className="mr-3" href={this.props.linkedIn} rel="noopener noopener">
+            <img src={inImg} alt="linkedIn"/>
+          </a>
         </div>
 
       </div>
@@ -56,5 +65,6 @@ Contact.defaultProps = {
   city: "Cluj-Napoca",
   nationality: "Romanian, Moldavian",
   linkedIn: "https://www.linkedin.com/in/dumitru-motpan-1b76038b/",
-  github: "https://github.com/Dima000"
+  github: "https://github.com/Dima000",
+  codinGame: "https://www.codingame.com/profile/8d1d5b47adad9549278882e069953e283825911"
 };

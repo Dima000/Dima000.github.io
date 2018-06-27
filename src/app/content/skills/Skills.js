@@ -5,8 +5,8 @@ import './skills.css';
 export class Skills extends Component {
   render() {
     return <section className="skills-section" id="skills">
-      <h2 className="title-area color-main">
-        <span className="mr-3">{this.props.title}</span>
+      <h2 className="title-area">
+        <span>{this.props.title}</span>
         <i className="fa fa-certificate mr-3"/>
       </h2>
 
