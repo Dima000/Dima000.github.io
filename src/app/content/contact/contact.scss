@@ -30,11 +30,60 @@
   .social-icons {
     display: flex;
     align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .social-icons a {
+    margin-right: 3rem;
   }
 
   .social-icons img {
     max-width: 30px;
     border-radius: 10%;
+  }
+}
+
+@media (max-width: ($breakpoint-desktop-large)) {
+  .contact-section {
+    .icons-section {
+      margin-top: 0;
+    }
+
+    .icons-section p {
+      padding: 0 0 20px 0;
+    }
+  }
+}
+
+@media (max-width: ($breakpoint-mobile)) {
+  .contact-section {
+    .icons-section {
+      margin-top: 0;
+    }
+
+    .icons-section p {
+      padding: 0 0 20px 0;
+    }
+
+    .social-icons {
+      margin-top: 1.5rem;
+    }
+
+    .social-icons a {
+      margin-right: 3rem;
+    }
+  }
+}
+
+@media print {
+  .contact-section {
+    .icons-section .item-website {
+      display: block;
+    }
+
+    .social-icons {
+      display: none;
+    }
   }
 
 }

@@ -76,3 +76,15 @@
     }
   }
 }
+
+@media (max-width: ($breakpoint-mobile)) {
+  .side-menu {
+    width: 100%;
+    height: initial;
+    position: initial;
+  }
+
+  .nav-area {
+    display: none;
+  }
+}

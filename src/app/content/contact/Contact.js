@@ -15,7 +15,7 @@ export class Contact extends Component {
       </h2>
 
       <div className="section-content row">
-        <div className="col-md-4 icons-section">
+        <div className="col-12 col-sm-6 icons-section">
           <p><a href={`mailto:${this.props.email}`}>
             <i className="fa fa-envelope"/>{this.props.email}
           </a></p>
@@ -27,21 +27,21 @@ export class Contact extends Component {
           </a></p>
         </div>
 
-        <div className="col-md-4 icons-section">
+        <div className="col-12 col-sm-6 icons-section">
           <p><i className="fa fa-home"/>{this.props.city}</p>
           <p><i className="fa fa-flag"/>{this.props.nationality}</p>
         </div>
 
-        <div className="col-md-4 icons-section social-icons">
-          <a className="mr-3" href={this.props.codinGame} rel="noopener noopener">
+        <div className="col-12 icons-section social-icons">
+          <a href={this.props.codinGame} rel="noopener noopener">
             <img src={codinImg} alt="codingame"/>
           </a>
 
-          <a className="mr-3" href={this.props.github} rel="noopener noopener">
+          <a href={this.props.github} rel="noopener noopener">
             <img src={gitbuhImg} alt="github"/>
           </a>
 
-          <a className="mr-3" href={this.props.linkedIn} rel="noopener noopener">
+          <a href={this.props.linkedIn} rel="noopener noopener">
             <img src={inImg} alt="linkedIn"/>
           </a>
         </div>
@@ -60,7 +60,7 @@ Contact.defaultProps = {
   email: "dumitru.motpan@gmail.com",
   phone: "(+40) 751 524 368",
   phoneHref: "tel:+40751524368",
-  website: "dima000.github.io",
+  website: "https://dima000.github.io",
   websiteHref: "https://dima000.github.io/",
   city: "Cluj-Napoca",
   nationality: "Romanian, Moldavian",

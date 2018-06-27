@@ -11,25 +11,31 @@ export class Skills extends Component {
       </h2>
 
       <div className="section-content row">
-        <div className="col-md-4">
+        <div className="col-md-12 mb-5 skill-group">
           <h4>{this.props.workingKnowledge}</h4>
-          {this.props.workingItems.map((item, index) =>
-              <p key={index}>{item}</p>
-          )}
+          <div className="d-flex skill-list">
+            {this.props.workingItems.map((item, index) =>
+                <span key={index} className="skill-item">{item}</span>
+            )}
+          </div>
         </div>
 
-        <div className="col-md-4">
+        <div className="col-md-12 mb-5 skill-group">
           <h4>{this.props.basicKnowledge}</h4>
-          {this.props.basicItems.map((item, index) =>
-              <p key={index}>{item}</p>
-          )}
+          <div className="d-flex skill-list">
+            {this.props.basicItems.map((item, index) =>
+                <span key={index} className="skill-item">{item}</span>
+            )}
+          </div>
         </div>
 
-        <div className="col-md-4">
+        <div className="col-md-12 skill-group">
           <h4>{this.props.toolsKnowledge}</h4>
-          {this.props.toolsItems.map((item, index) =>
-              <p key={index}>{item}</p>
-          )}
+          <div className="d-flex skill-list">
+            {this.props.toolsItems.map((item, index) =>
+                <span key={index} className="skill-item">{item}</span>
+            )}
+          </div>
         </div>
 
       </div>
@@ -48,23 +54,24 @@ Skills.defaultProps = {
   toolsKnowledge: "Tools",
 
   workingItems: [
-      "React",
-      "Angular 4 / AngularJs",
-      "Bootstrap",
-      "Sass / Less",
-      "Java"
+    "React",
+    "Angular 4",
+    "AngularJs",
+    "Bootstrap",
+    "Sass",
+    "Java",
+    "SQL",
+    "jQuery"
   ],
   basicItems: [
-      "Node.js",
-      "Express",
-      "jQuery",
-      "SQL",
-      "Mongo DB"
+    "Node.js",
+    "Express",
+    "Mongo DB"
   ],
   toolsItems: [
-      "Git",
-      "Webpack",
-      "Jira",
-      "Trello"
+    "Git",
+    "Webpack",
+    "Jira",
+    "Trello"
   ]
 };
