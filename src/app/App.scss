@@ -17,6 +17,11 @@
     padding: 30px 40px;
   }
 
+  section .section-content a {
+    color: #595959;
+    text-decoration: underline;
+  }
+
   section .title-area {
     span {
       opacity: 0.85;
@@ -60,6 +65,19 @@
 
     section .section-content {
       padding: 30px 0;
+    }
+  }
+}
+
+@media print {
+  .App {
+    .content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+
+    section .section-content {
+      padding: 20px 0;
     }
   }
 }

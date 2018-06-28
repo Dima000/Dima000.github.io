@@ -1,0 +1,30 @@
+@import "../../../assets/styles/variables";
+
+.portfolio-section {
+  img {
+    max-width: 100%;
+  }
+
+  .section-content {
+    i {
+      color: $themeBlue;
+      width: 10px;
+      margin-right: 18px;
+      font-size: 18px;
+    }
+  }
+
+  .group ul {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+}
+
+
+@media (max-width: ($breakpoint-mobile)) {
+  .portfolio-section {
+    .group ul {
+      padding-left: 40px;
+    }
+  }
+}

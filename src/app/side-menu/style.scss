@@ -8,7 +8,7 @@
   position: fixed;
   height: 100vh;
   text-align: center;
-  padding: 25px 10px;
+  padding: 25px 10px 10px 10px;
   color: $plainWhite;
 
   .relative-container {
@@ -17,19 +17,18 @@
   }
 
   .avatar {
-    width: 170px;
-    height: auto;
+    max-height: 25vh;
     border-radius: 50%;
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
   }
 
   .name-area {
     h2 {
       text-transform: uppercase;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
     p {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
     }
   }
 
@@ -42,9 +41,26 @@
       list-style: none;
       padding: 0;
       margin-bottom: 0;
+      max-height: 55vh;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 12px;
+      }
+
+      &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+      }
+
 
       li {
-        margin: 20px;
+        margin: 15px;
         border-bottom: 2px solid $plainWhite;
         border-top: 2px solid $plainWhite;
 
@@ -53,7 +69,7 @@
         }
 
         a {
-          padding: 10px;
+          padding: 8px;
           display: block;
           color: inherit;
           text-decoration: none;
@@ -82,6 +98,22 @@
     width: 100%;
     height: initial;
     position: initial;
+  }
+
+  .nav-area {
+    display: none;
+  }
+}
+
+@media print {
+  .side-menu {
+    top: 0;
+  }
+
+  .relative-container {
+    img {
+      margin: 0 auto 15px;
+    }
   }
 
   .nav-area {
