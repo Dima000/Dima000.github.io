@@ -23,7 +23,7 @@ export class Portfolio extends Component {
 
         <div className="col-lg-6 col-md-12 mb-4">
           <div className="image-container">
-            <img src={portfolioImg} alt="portfolio image"/>
+            <img src={portfolioImg} alt="portfolio"/>
           </div>
         </div>
 
