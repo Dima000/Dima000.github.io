@@ -18,6 +18,10 @@
     padding-left: 0;
     list-style-position: inside;
   }
+
+  .display-print {
+    display: none;
+  }
 }
 
 
@@ -27,4 +31,16 @@
       padding-left: 40px;
     }
   }
+}
+
+@media print {
+  .portfolio-section {
+    margin-top: 450px;
+
+    .display-print {
+      display: block;
+      font-size: 1rem;
+    }
+  }
+
 }

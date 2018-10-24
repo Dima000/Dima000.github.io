@@ -16,6 +16,7 @@ export class Portfolio extends Component {
           <h4>
             {this.props.projectType}
             <a href={this.props.websiteUrl}>{'website'}</a>
+            <span className="display-print mb-4"><br/>{this.props.websiteUrl}</span>
           </h4>
           <p>{this.props.description}</p>
         </div>

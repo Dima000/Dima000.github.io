@@ -9,6 +9,10 @@
     font-size: 90%;
     color: grey;
   }
+
+  @media print {
+    margin-top: 150px;
+  }
 }
 
 .color-main {

@@ -84,12 +84,16 @@
 @media print {
   .App {
     .content {
-      margin-left: 250px;
-      padding: 20px;
+      margin-left: 0;
+      padding: 20px 40px 0 40px;
     }
 
     section .section-content {
       padding: 20px 0;
+    }
+
+    section .section-content a {
+      text-decoration: none;
     }
   }
 }
