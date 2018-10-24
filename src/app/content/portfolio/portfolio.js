@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import portfolioImg from '../../../assets/images/portfolio1.png';
 import './portfolio.css';
 
@@ -12,39 +12,34 @@ export class Portfolio extends Component {
 
       <div className="section-content row">
 
-        <div className="col-md-12 mb-4">
-          <h4>{this.props.projectType}</h4>
-          <p className="item-website">
-            <a href={this.props.websiteUrl}>
-              <i className="fa fa-globe"/>{this.props.websiteUrl}
-            </a>
-          </p>
+        <div className="col-lg-5 mb-5">
+          <h4>
+            {this.props.projectType}
+            <a href={this.props.websiteUrl}>{'website'}</a>
+          </h4>
+          <p>{this.props.description}</p>
         </div>
 
-        <div className="col-lg-6 col-md-12 mb-4">
+        <div className="col-lg-7 mb-5">
           <div className="image-container">
             <img src={portfolioImg} alt="portfolio"/>
           </div>
         </div>
 
-        <div className="col-lg-6 col-md-12 mb-4">
-          <p>{this.props.description}</p>
-        </div>
-
-        <div className="col-md-6 col-sm-12 group mb-4">
+        <div className="col-md-5 col-sm-12 group mb-4">
           <h5>{this.props.techStack.title}</h5>
           <ul>
             {this.props.techStack.items.map((item, index) =>
-                <li key={index} className="">{item}</li>
+              <li key={index} className="">{item}</li>
             )}
           </ul>
         </div>
 
-        <div className="col-md-6 col-sm-12 group">
+        <div className="col-md-7 col-sm-12 group">
           <h5>{this.props.projectFeatures.title}</h5>
           <ul>
             {this.props.projectFeatures.items.map((item, index) =>
-                <li key={index} className="">{item}</li>
+              <li key={index} className="">{item}</li>
             )}
           </ul>
         </div>
@@ -54,26 +49,28 @@ export class Portfolio extends Component {
 }
 
 Portfolio.defaultProps = {
-  title: "Portfolio",
-  projectType: "Website to promote business",
-  websiteUrl: "http://traducator-portugheza.ro",
+  title: 'Portfolio',
+  projectType: 'Small \nbusiness\n',
+  websiteUrl: 'http://traducator-portugheza.ro/en/main',
+  websitePretty: 'traducator-portugheza.ro',
 
-  description: "My friend wanted a website to promote her services, authorized translations. I build the website, handled the design and deployment of the project.",
+  description: 'My friend wanted a website to promote her services, authorized translations. ' +
+    'I handled the full development of the project, including the design and deployment',
   techStack: {
-    title: "Technologies",
+    title: 'Technologies',
     items: [
-      "React",
-      "Bootstrap",
-      "CPanel deployment"
+      'React',
+      'Bootstrap',
+      'CPanel deployment'
     ]
   },
   projectFeatures: {
-    title: "Project features",
+    title: 'Project features',
     items: [
-      "Eye catchy design",
-      "3 languages",
-      "Responsive layout",
-      "Send email from website"
+      'Eye catchy design & Responsive Layout',
+      'Localization in 3 languages',
+      'Ability to send email from the website',
+      'SEO friendly via Google Search Console'
     ]
   }
 };
