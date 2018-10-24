@@ -87,7 +87,7 @@
           }
         }
 
-        @include shift-effect-button($plainWhite, tint($themeBlue, 20%));
+        //@include shift-effect-button($plainWhite, tint($themeBlue, 20%));
       }
     }
   }
