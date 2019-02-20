@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactHtmlParser from "react-html-parser";
-import './style.css';
+import './style.scss';
 
 export class AboutMe extends Component {
   render() {

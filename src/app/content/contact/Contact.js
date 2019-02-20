@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import codinImg from '../../../assets/images/codingame-logo.png';
 import inImg from '../../../assets/images/in-logo.png';
 import gitbuhImg from '../../../assets/images/github-logo.png';
-import './contact.css';
+import './contact.scss';
 
 export class Contact extends Component {
   render() {

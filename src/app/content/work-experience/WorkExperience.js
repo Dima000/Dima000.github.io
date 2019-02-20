@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactHtmlParser from 'react-html-parser';
-import './work-experience.css';
+import './work-experience.scss';
 
 export class WorkExperience extends Component {
   render() {

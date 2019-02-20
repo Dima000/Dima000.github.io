@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import './skills.css';
+import './skills.scss';
 
 export class Skills extends Component {
   render() {

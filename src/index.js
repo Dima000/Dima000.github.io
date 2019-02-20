@@ -5,7 +5,7 @@ import App from './app/App';
 // eslint-disable-next-line
 import smoothScroll from 'smoothscroll';
 
-import 'font-awesome/css/font-awesome.min.css'
+import '@fortawesome/fontawesome-free/css/all.css'
 import 'bootstrap/dist/css/bootstrap-reboot.css'
 import 'bootstrap/dist/css/bootstrap.css'
 
